@@ -2,6 +2,20 @@
 import streamlit as st
 from ultralytics import YOLO
 from PIL import Image
+#teststart
+import streamlit as st
+
+# quick cv2 test (push this small change, then revert when fixed)
+try:
+    import cv2
+    st.write("cv2 OK — version:", cv2.__version__)
+except Exception as e:
+    st.error(f"cv2 import failed: {e}")
+    raise
+
+from ultralytics import YOLO
+from PIL import Image
+#testend
 
 # Load your trained model
 model = YOLO("runs\\detect\\train\\weights\\best.pt")
