@@ -18,7 +18,7 @@ from PIL import Image
 #testend
 
 # Load your trained model
-model = YOLO("runs\\detect\\train\\weights\\best.pt")
+model = YOLO("runs/detect/train/weights/best.pt")
 
 st.title("🔫 Weapon Detection with YOLOv8")
 
